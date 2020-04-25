@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+
+<h1>Top TEN RSI Scores</h1>
+<table>
+{% for row in all_rows %}
+<TR>
+   <TD>{{row[1]}}</TD>
+   <TD>{{row[3]}}</TD>
+   <TD>{{row[4]}}</TD>
+</TR>
+{% endfor %}
+</table>
