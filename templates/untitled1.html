@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>{{ title }}</title>
+</head>
+<body>
+<!-- Serving an Image -->
+
+<h1>Hello, Visitor!</h1>
+
+<p style="background-color:White;">
+<form action="">
+ <label style="font-size:22px;" for="ticker">Ticker: </label>
+ <input style="font-size:22px;" type="text" id="ticker" name="ticker" placeholder="SPY (default)"><br><br>
+</form>
+
+<img src="data:image/png;base64, {{ plot_url }}">
+</body>
+</html>

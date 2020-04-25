@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>Hello, Visitor!</h1>
+        <p><a href="http://bpudiped.pythonanywhere.com/feedback" style="font-size:30px">Feedback</a></p>
+        <p style="background-color:White;">
+        <form>
+            <label style="font-size:22px;" for="ticker">Enter a Ticker Symbol: </label>
+            <input style="font-size:22px;" type="text" name="tickersymbol" id="ticker" placeholder="Default = SPY"><br><br>
+        </form>
+        <h2>SOARING INDICATOR</h2>
+        <img src="data:image/png;base64, {{ plot_url2 }}">
+        <h2>CORRELATING INDICATOR</h2>
+        <img src="data:image/png;base64, {{ plot_url1 }}">
+        <img src="data:image/png;base64, {{ plot_url }}">
+    </body>
+</html>
